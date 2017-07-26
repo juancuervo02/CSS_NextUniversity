@@ -1,13 +1,24 @@
+body{
+    font-family: "Dancing Script",
+}
+
 header{
     width: 1000px;
     background-color: #5b7989;
     border-radius: 10px 10px 0 0;
     height: 100px;
-    display: flex
+}
+
+.navegador a{
+    text-decoration: none;
+    color: white;
+    position: fixed;
+    flex-direction: column-reverse; 
+    margin: 10px;
 }
 
 .titulo{
-    padding: 20px;
+    margin: 10px;
     color: white;
     text-shadow: 2px 2px #02010a;
 }
@@ -26,7 +37,7 @@ header{
     background-color: #d5c75f;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 900px){
     #imagenes{
         margin: 0;
         width: 100%;        
@@ -40,12 +51,31 @@ header{
     #retratos{
         width: 100%;
     }
-    header{
+    footer{
         width: 100%
+    }
+    header{
+        width: 100%;
+    }
+    .titulo{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
     }
 }
 
-@media (min-width:480px){
+@media (min-width:900px){
+    header{
+        width: 100%;
+        display: flex;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    #footer{
+        width: 100%;
+        display: flex;
+    }
     #imagenes{
         width: 100%;
     }
@@ -67,6 +97,18 @@ header{
         margin: 10px;
         right: 10px
     }
+    #contactos{
+        width: 25%;
+    }
+    #redes{
+        width: 25%;
+    }
+    #terminos{
+        width: 25%;
+    }
+    #derechos{
+        width: 25%;
+    }
 }
 
 #paisajes{
@@ -87,4 +129,8 @@ header{
     transform: translate(20px, -5px);
     transition: 1s;
     box-shadow: -5px 5px 4px #82c3a6;
+}
+footer{
+    background-color: #c6d5c5;
+    border-radius: 10px;
 }
