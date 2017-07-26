@@ -8,7 +8,8 @@
 }
 
 body{
-    font-family: 'DancingScript'
+    font-family: 'DancingScript';
+    background-color: #02010a;
 }
 
 header{
@@ -26,6 +27,7 @@ ul li{
 .navegador a{
     color: white;
     margin: 10px;
+    line-height: 100px;
 }
 
 img{
@@ -78,7 +80,7 @@ img{
     }
     .titulo{
         width: 100%;
-        font-size: 20px;
+        font-size: 40px;
         text-align: center;
     }
     .banner img{
@@ -89,13 +91,14 @@ img{
 @media (min-width:900px){
     .contenido{
         max-width: 900px;
+        margin: 0 auto;
     }
     header{
         width: 100%;
         display: flex;
     }
     .titulo{
-        font-size: 40px;
+        font-size: 35px;
     }
     #footer{
         width: 100%;
@@ -108,19 +111,19 @@ img{
         display: flex;
         height: 300px;
     }
-    #paisajes{
+    #imagen-inferior #paisajes{
         width: 40%;
         height: 280px;
-        position: absolute;
-        margin: 10px;
+        margin-top: 10px;
+        position: relative;
         left: 10px;
     }
-    #retratos{
+    #imagen-inferior #retratos{
         width: 40%;
         height: 280px;
-        position: absolute;
-        margin: 10px;
-        right: 10px
+        margin-top: 10px;
+        position: relative;
+        right: -165px;
     }
     #contactos{
         width: 25%;
