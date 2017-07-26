@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+}
+
 @font-face{
     font-family: 'DancingScript';
     src: url('DancingScript.otf')
@@ -24,10 +28,13 @@ ul li{
     margin: 10px;
 }
 
+img{
+    box-shadow: 2px 2px #02010a
+}
+
 .titulo{
     margin: 10px;
     color: white;
-    text-shadow: 2px 2px #02010a;
     margin-right: 20%;
 }
 
@@ -46,6 +53,10 @@ ul li{
 }
 
 @media screen and (max-width: 900px){
+    .contenido{
+        width: 100%;
+    }
+
     #imagenes{
         margin: 0;
         width: 100%;        
@@ -70,9 +81,15 @@ ul li{
         font-size: 20px;
         text-align: center;
     }
+    .banner img{
+        width: 100%;
+    }
 }
 
 @media (min-width:900px){
+    .contenido{
+        max-width: 900px;
+    }
     header{
         width: 100%;
         display: flex;
@@ -117,6 +134,14 @@ ul li{
     #derechos{
         width: 25%;
     }
+    .banner{
+        display: flex;
+    }
+    .banner img{
+        width: 30%;
+        text-align: center;
+        margin: 15px;
+    }
 }
 
 #dog{
@@ -155,7 +180,30 @@ p{
     margin: 10px;
 }
 
+.banner img{
+    height: 300px;
+}
+
 #redes a{
     text-decoration: none;
     color: black;
+}
+
+.banner{
+    background-color: #d5c75f;
+}
+
+#imagen1{
+    -webkit-filter: blur(10px);
+    filter: blur(10px)
+}
+
+#imagen2, #imagen4, #imagen6{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#imagen3{
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%);
 }
